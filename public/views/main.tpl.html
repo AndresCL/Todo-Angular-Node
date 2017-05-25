@@ -28,7 +28,10 @@
 						ui-event="{ blur : 'blurCallback(todo)' }"> 
 					<!--<button class="btn btn-primary btn-xs" ng-click="editTodo(todo.id, todo.text, todo.done)">Update</button>-->
 
-					<button type="button" class="btn btn-primary" ng-model="todo.done" uib-btn-checkbox>
+					<button type="button" class="btn btn-primary" 
+									ng-model="todo.done" 
+									ng-click="blurCallback(todo)"
+									uib-btn-checkbox>
 						<span class="glyphicon glyphicon-check" aria-hidden="true"></span> 
 					</button>
 					

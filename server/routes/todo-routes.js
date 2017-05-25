@@ -73,7 +73,7 @@ var self = module.exports = {
 	getTodos : function(req, res) {
 
 		// Recovering all todos tasks
-		todo.findAll({raw: true}).then(todostasks => {
+		todo.findAll({raw: true, order:sequelize.col('done')}).then(todostasks => {
 
 			// Returning all items
 			return res.json(todostasks);
