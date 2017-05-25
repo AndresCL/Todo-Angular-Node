@@ -21,6 +21,11 @@ Based on Michael Cullen Todo (https://github.com/mick26/CRUD-todo-Node-Exp-ng-Po
 * Clone the Repository
 * _npm install_ - install all the node packages listed in the package.json file 
 * _bower install_ - installs the front end packages listed in the bower.json file
+* Select option 6 as indicated in image
+
+<div align="center">
+		<img width="95%" src="screenshot/todoapp.png" alt="Todos" title="Todos">
+</div>
 
 * Open ../sql/database.sql and run it in your Postgres database (You may have to change the Owner data on it)
 * Open ../server/config/database.js and enter PostgreSQL database connection details, using this format: user@server:port/database
