@@ -24,7 +24,7 @@ Based on Michael Cullen Todo (https://github.com/mick26/CRUD-todo-Node-Exp-ng-Po
 * Select option 6 as indicated in image
 
 <div align="center">
-		<img width="95%" src="screenshot/todoapp.png" alt="Todos" title="Todos">
+		<img width="95%" src="screenshot/bower_option.png" alt="Todos" title="Todos">
 </div>
 
 * Open ../sql/database.sql and run it in your Postgres database (You may have to change the Owner data on it)
