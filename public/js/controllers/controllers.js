@@ -143,7 +143,7 @@ angular.module('postgreDbApp.controllers', ['angular-md5', 'ui.event', 'ui.boots
 		loginTodoService.loginUser(loginData)
 			.then(function(data) {
 
-				if(data.status !== 'success'){
+				if(data.data.status !== 'success'){
 					// Handling error
 					$scope.user.login.error = true;
 					$scope.user.login.msg = 'There was an error trying to login. Check your username and pass.';
@@ -151,7 +151,7 @@ angular.module('postgreDbApp.controllers', ['angular-md5', 'ui.event', 'ui.boots
 				else{
 					
 					// Saving user & login status in localStorage
-					localStorage.userName = data.name;
+					localStorage.userName = data.data.name;
 					localStorage.userAuthenticated = true;
 
 					// Change path
