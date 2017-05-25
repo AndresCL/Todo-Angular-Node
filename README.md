@@ -22,7 +22,7 @@ Based on Michael Cullen Todo (https://github.com/mick26/CRUD-todo-Node-Exp-ng-Po
 * _npm install_ - install all the node packages listed in the package.json file 
 * _bower install_ - installs the front end packages listed in the bower.json file
 
-* Open ../sql/database.sql and run it in your Postgres database
+* Open ../sql/database.sql and run it in your Postgres database (You may have to change the Owner data on it)
 * Open ../server/config/database.js and enter PostgreSQL database connection details
 
 ## Then Run
