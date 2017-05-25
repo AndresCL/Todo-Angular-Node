@@ -1,0 +1,60 @@
+
+
+<section id = "secTodoApp">
+
+	<div class="container">
+
+		<div ng-show="user.authenticated">Welcome {{ user.name }} <a style="cursor:pointer;" ng-click="logout()">[Logout]</a></div>
+		
+		<!-- Page header -->
+		<div class="jumbotron text-center">
+			<h1>TODO WEB APP <span class="label label-info">{{todos.length}}</span></h1>
+			<p>Create Read Update Delete</p>
+		</div>
+
+		<!-- List of Todo's -->
+		<div id="todo-list" class="row" >
+			<div class="items">
+
+				<!-- Loop through todos in $scope.todos -->
+				<div class="checkbox" ng-repeat="todo in todos track by $index">
+					
+					<button type="button" class="btn btn-primary btn-delete" ng-model="todo.done" ng-click="deleteTodo(todo.id)">
+						<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> 
+					</button>
+
+					<input type="text" name="ibTodo" ng-model= "todo.text" value="{{todo.text}}" 
+						ng-class="{'doneClass': todo.done, 'notDoneClass': !todo.done }"
+						ui-event="{ blur : 'blurCallback(todo)' }"> 
+					<!--<button class="btn btn-primary btn-xs" ng-click="editTodo(todo.id, todo.text, todo.done)">Update</button>-->
+
+					<button type="button" class="btn btn-primary" ng-model="todo.done" uib-btn-checkbox>
+						<span class="glyphicon glyphicon-check" aria-hidden="true"></span> 
+					</button>
+					
+				</div>
+			</div>
+		</div>
+
+		<!-- Form to create Todo -->
+		<div id="todo-form" class="row">
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				
+				<form name="fmCreateTodo" novalidate>
+					
+					<div class="form-group form-task-input">
+						<input type="text" class="form-control input-lg text-center" placeholder="Add a new task..." 
+						ng-model="formData.text" ng-required="true">
+					</div>
+
+					<!-- Form will be invalid unless the input box has content only then will the Button become active-->
+					<button type="submit" class="btn btn-primary btn-lg" ng-disabled="fmCreateTodo.$invalid" 
+							ng-click="createTodo()">Create</button>
+				</form> <!-- @END/ form -->
+
+			</div> <!-- @END/ .col -->
+		</div> <!-- @END/ #todo-form -->
+
+	</div> <!-- @END/ .container -->
+
+</section> <!-- @END/ section -->

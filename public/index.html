@@ -1,0 +1,56 @@
+<!--===================================================================================
+Michael Cullen 
+Todo CRUD
+index.html
+
+May 2015
+Working - (Tá se ag obair)
+
+Ref.
+http://scotch.io/tutorials/javascript/creating-a-single-page-todo-app-with-node-and-angular
+http://tylerhenkel.com/build-an-angular-todo-app-with-a-node-backend/
+=====================================================================================-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Node,Express & Angular with PostgreSQL</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css"> <!-- load bootstrap -->
+</head>
+
+
+<body ng-app="postgreDbApp"> 
+
+	<div class="">
+		<!-- View template will be shown here -->
+	    <div class="" ng-view=""></div>
+
+	    <!-- Footer -->
+		<div class="text-center text-muted">
+			<p>Todo by Andrés Contreras, based on Michael Cullen (https://github.com/mick26/CRUD-todo-Node-Exp-ng-PostgreSQL)</p>
+		</div>
+
+	</div> <!-- @END/ .container -->
+
+
+	<!-- JS -->
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.min.js"></script>
+	<script src="bower_components/angular-md5/angular-md5.js"></script>
+
+	<script type="text/javascript" src="bower_components/angular-ui-event/dist/event.js"></script>
+	<script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+
+	<!-- App JS -->
+	<script src="js/app.js"></script>
+	<script src="js/services/services.js"></script>
+	<script src="js/controllers/controllers.js"></script>
+
+</body>
+</html>

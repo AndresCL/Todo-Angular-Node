@@ -1,0 +1,66 @@
+
+html { 
+	overflow-y:scroll; 
+}
+
+body {
+	padding-top:50px; 
+}
+
+#todo-list { 
+	margin-bottom:30px;
+	display: flex;
+}
+
+#todo-list .items {
+	margin: 0 auto;
+}
+
+#todo-form { 
+	margin-bottom:50px; 
+}
+
+.form-task-input {
+	display: flex;
+}
+
+.form-task-input .form-control{
+	margin: 0 auto;
+	width: 245px;
+}
+
+input {
+	border-radius: 5px;
+	border: 1px solid;
+	padding: 5px;
+}
+
+
+.doneClass {
+	text-decoration: line-through;
+	color: gainsboro;
+}
+
+.notDoneClass {
+	color: #379dbb;
+}
+
+.btn-primary {
+	background-color: #5bc0de;
+	border-color: #379dbb;
+}
+
+.btn-primary:hover {
+	background-color: #379dbb;
+	border-color: #379dbb;
+}
+
+.btn-delete {
+	background-color: #de5b5b;
+	border-color: #bb3737;
+}
+
+.btn-delete:hover {
+	background-color: #bb3737;
+	border-color: #bb3737;
+}

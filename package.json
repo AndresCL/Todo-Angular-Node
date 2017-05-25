@@ -1,0 +1,17 @@
+{
+  "name": "Node-Express-Angular-Postgres-Todo",
+  "version": "0.0.1",
+  "description": "User Auth, Sequelize and UI Improvements",
+  "main": "node server.js",
+  "author": "Andrés Contreras",
+  "dependencies": {
+    "body-parser": "^1.10.0",
+    "colors": "^1.0.3",
+    "express": "^4.10.6",
+    "path": "^0.4.9",
+    "sequelize": "^3.30.4"
+  },
+  "devDependencies": {
+    "morgan": "~1.1.1"
+  }
+}

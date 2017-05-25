@@ -1,0 +1,27 @@
+
+<section id = "loginTodoApp">
+  <div class="container">
+
+		<!-- Panel for login -->
+    <h1>TODO Login</h1>
+		<div class="panel panel-default">
+      <div class="panel-body">
+        
+        <form>
+          <div class="form-group">
+            <label>Username</label>
+            <input ng-model="user.username" type="text" class="form-control" placeholder="todo@kambda">
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input ng-model="user.pass" type="password" class="form-control" placeholder="pass">
+          </div>
+          
+          <div ng-if="user.login.error" class="alert alert-danger" role="alert">{{ user.login.msg }}</div>
+          <button type="submit" class="btn btn-primary" ng-click="loginUser(user)">Login!</button>
+
+      </div>
+		</div>
+
+  </div>
+</section>
