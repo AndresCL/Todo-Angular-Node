@@ -3,7 +3,7 @@ Database Connection Settings
 *********************************************************/
 
 // user@server:port/database
-exports.conString = "postgres://andres@127.0.0.1:5432/andres";
+exports.conString = "postgres://zkxtagcdctjown:38116bebb83909f7ca3ae96e9113fe8b831c6a4636f3bcf6ed5538d0d50c7aaa@ec2-107-21-248-129.compute-1.amazonaws.com:5432/d3lvtrqejlni9p";
 
 
 
